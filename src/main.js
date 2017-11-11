@@ -22,7 +22,7 @@ const createAnimalFigure = (animal) => {
   figure.appendChild(caption);
 
   figure.addEventListener('click', (event) => {
-
+    player.play(animal.sound);
   });
 
   return figure;
