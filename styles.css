@@ -18,6 +18,15 @@ main {
   overflow: hidden;
 }
 
+#logo {
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
 section.animals {
   height: 100vh;
   display: flex;
