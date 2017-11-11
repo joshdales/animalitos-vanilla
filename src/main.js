@@ -1,4 +1,5 @@
 const player = new Player();
+const album = new Album();
 
 const animalsContainer = document.createElement('section');
 animalsContainer.className = 'animals';
@@ -14,7 +15,7 @@ const createAnimalFigure = (animal) => {
   figure.appendChild(background)
 
   const caption = document.createElement('figcaption');
-  caption.style.backgroundColour = animal.bgColour;
+  caption.style.backgroundColor = animal.bgColor;
   caption.innerHTML = `
     <h2>${animal.name}</h2>
     <img src="${animal.icon}" alt="${animal.name}" class='animal-icon'/>
@@ -22,6 +23,7 @@ const createAnimalFigure = (animal) => {
   figure.appendChild(caption);
 
   figure.addEventListener('click', (event) => {
+    album.show(animal);
     player.play(animal.sound);
   });
 
