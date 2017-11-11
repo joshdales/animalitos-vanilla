@@ -16,8 +16,12 @@ const createAnimalFigure = (animal) => {
   caption.innerHTML = `
     <h2>${animal.name}</h2>
     <img src="${animal.icon}" alt="${animal.name}" class='animal-icon'/>
-  `;
+    `;
   figure.appendChild(caption);
+
+  figure.addEventListener('click', (event) => {
+    
+  });
 
   return figure;
 }
