@@ -24,6 +24,8 @@ class Album {
     this.section.innerHTML = imageTags.join('')
   }
 
-
+  hide() {
+    this.section.classList.remove('active');
+  }
 
 }

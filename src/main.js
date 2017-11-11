@@ -2,10 +2,10 @@ const player = new Player();
 const album = new Album();
 
 document.body.addEventListener('keyup', event => {
-  if (event.keycode === 27) {
+  if (event.keyCode === 27) {
     album.hide();
   }
-})
+});
 
 const animalsContainer = document.createElement('section');
 animalsContainer.className = 'animals';
