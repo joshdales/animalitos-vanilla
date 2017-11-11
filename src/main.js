@@ -1,3 +1,5 @@
+const player = new Player();
+
 const animalsContainer = document.createElement('section');
 animalsContainer.className = 'animals';
 document.body.append(animalsContainer);
@@ -20,7 +22,7 @@ const createAnimalFigure = (animal) => {
   figure.appendChild(caption);
 
   figure.addEventListener('click', (event) => {
-    
+
   });
 
   return figure;
