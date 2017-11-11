@@ -7,8 +7,9 @@ const createAnimalFigure = (animal) => {
   figure.className = 'animal';
 
   const background = document.createElement('div');
-  backgroud.className = 'background';
+  background.className = 'background';
   background.style.backgroundImage = `url('${animal.image}')`;
+  figure.appendChild(background)
 
   return figure;
 }
