@@ -15,11 +15,15 @@ class Album {
       this.displayImages(data.results)
     })
   }
-}
 
-displayImages(images) {
-  const imageTags = images.map(image => {
-    return `<img src="${image.urls.regular}" alt="${image.description}" />`
-  })
+  displayImages(images) {
+    const imageTags = images.map(image => {
+      return `<img src="${image.urls.regular}" alt="${image.description}" />`
+    });
+
+    this.section.innerHTML = imageTags.join('')
   }
+
+
+
 }
